@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %} | Contact{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <div class="page-badge">📬 Get in Touch</div>
+        <h1>Contact <span class="accent">Us</span></h1>
+        <p>Have questions about the EV analytics platform? We'd love to hear from you.</p>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Reach out</h3>
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <span>analytics@ecarstart.com</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">🌐</span>
+                    <span>E-CarStart Analytics Platform</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📊</span>
+                    <span>Tableau Public Dashboards Available</span>
+                </div>
+            </div>
+            <form class="contact-form" onsubmit="return false;">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Your message..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Message ⚡</button>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

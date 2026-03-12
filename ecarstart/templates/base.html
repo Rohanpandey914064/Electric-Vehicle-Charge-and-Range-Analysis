@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-CarStart Analytics{% block title %}{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <span class="logo-icon">⚡</span>
+            <span class="logo-text">E-CarStart</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('home') }}" class="{% if request.endpoint == 'home' %}active{% endif %}">Home</a></li>
+            <li><a href="{{ url_for('dashboard') }}" class="{% if request.endpoint == 'dashboard' %}active{% endif %}">Dashboard</a></li>
+            <li><a href="{{ url_for('story') }}" class="{% if request.endpoint == 'story' %}active{% endif %}">Story</a></li>
+            <li><a href="{{ url_for('team') }}" class="{% if request.endpoint == 'team' %}active{% endif %}">Team</a></li>
+        </ul>
+        <a href="{{ url_for('dashboard') }}" class="btn-nav">Get Started</a>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    </nav>
+
+    <!-- PAGE CONTENT -->
+    {% block content %}{% endblock %}
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">E-CarStart</span>
+                <p>Modern analytics solutions for Electric Vehicles</p>
+            </div>
+            <div class="footer-links">
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('dashboard') }}">Dashboard</a>
+                <a href="{{ url_for('story') }}">Story</a>
+                <a href="{{ url_for('team') }}">Team</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 E-CarStart Analytics · Built with Flask & Tableau</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('open');
+        }
+    </script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

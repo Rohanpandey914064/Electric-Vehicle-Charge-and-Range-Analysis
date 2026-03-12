@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% block title %} | Team{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <div class="page-badge">👥 Our Team</div>
+        <h1>Meet the <span class="accent">Team</span></h1>
+        <p>The data analysts behind E-CarStart's EV analytics platform.</p>
+    </div>
+</section>
+
+<section class="team-section">
+    <div class="container">
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-avatar">AS</div>
+                <h3>Aviral Srivastava</h3>
+                <p class="team-role">Data Acquisition & Database Lead</p>
+                <p class="team-bio">Leads dataset collection, data understanding, and database-level extraction and SQL operations for the EV analytics project.</p>
+            </div>
+            <div class="team-card">
+                <div class="team-avatar">AG</div>
+                <h3>Ayush Gupta</h3>
+                <p class="team-role">Tableau Dashboard Specialist</p>
+                <p class="team-bio">Builds Tableau data connections and dashboards, owns key EV visualizations, and ensures responsive dashboard design quality.</p>
+            </div>
+            <div class="team-card">
+                <div class="team-avatar">K</div>
+                <h3>Kaustub</h3>
+                <p class="team-role">Story & Performance Testing Lead</p>
+                <p class="team-bio">Owns story development and validates data filters, calculated fields, and visualization/graph quality across project outputs.</p>
+            </div>
+            <div class="team-card">
+                <div class="team-avatar">LJ</div>
+                <h3>Lakshya Jaiswal</h3>
+                <p class="team-role">Publishing, Integration & Documentation</p>
+                <p class="team-bio">Handles publishing, Flask web integration, end-to-end demonstration assets, and project documentation delivery.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="team-allocations">
+    <div class="container">
+        <h2 class="section-title">Team Task Allocation</h2>
+        <p class="section-sub">Complexity level for all modules: Easy</p>
+
+        <div class="allocation-grid">
+            <article class="allocation-card">
+                <h3>Aviral Srivastava</h3>
+                <p class="allocation-domain">Data Collection & Database Operations</p>
+                <ul>
+                    <li>Collect the dataset</li>
+                    <li>Understand the data</li>
+                    <li>Data collection and extraction from database</li>
+                    <li>Store data in DB and perform SQL operations</li>
+                </ul>
+            </article>
+
+            <article class="allocation-card">
+                <h3>Ayush Gupta</h3>
+                <p class="allocation-domain">Tableau Dashboard Development</p>
+                <ul>
+                    <li>Connect DB with Tableau</li>
+                    <li>Prepare data for visualization (dashboard-ready)</li>
+                    <li>No of unique visualizations: 11</li>
+                    <li>Dashboard responsive design</li>
+                    <li>No of models/brand and summary card dashboard modules</li>
+                </ul>
+            </article>
+
+            <article class="allocation-card">
+                <h3>Kaustub</h3>
+                <p class="allocation-domain">Story Creation & Performance Testing</p>
+                <ul>
+                    <li>No of scenes of story</li>
+                    <li>Utilization of data filters</li>
+                    <li>No of calculation fields</li>
+                    <li>No of visualizations/graphs testing</li>
+                    <li>Amount of data rendered to DB testing</li>
+                </ul>
+            </article>
+
+            <article class="allocation-card">
+                <h3>Lakshya Jaiswal</h3>
+                <p class="allocation-domain">Publishing, Web Integration & Documentation</p>
+                <ul>
+                    <li>Publishing</li>
+                    <li>Dashboard and story embed with Flask UI</li>
+                    <li>Record end-to-end project explanation video</li>
+                    <li>Project documentation (step-by-step development)</li>
+                    <li>Final integration and delivery support</li>
+                </ul>
+            </article>
+        </div>
+
+        <div class="viz-list-card">
+            <h3>Visualization Checklist (11)</h3>
+            <ol>
+                <li>Charging stations by region and type in India</li>
+                <li>EV charging stations map of India</li>
+                <li>Different EV cars in India</li>
+                <li>Top speed for different brands</li>
+                <li>Price for different cars in India</li>
+                <li>Top 10 most efficient EV brands</li>
+                <li>Brands according to body style</li>
+                <li>Brand filtered by powertrain type</li>
+                <li>No of models by each brand</li>
+                <li>Summary card for EV brands globally</li>
+                <li>Summary card for EV brands in India</li>
+            </ol>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %} | Story{% endblock %}
+
+{% block content %}
+
+<section class="page-hero story-hero">
+    <div class="container">
+        <div class="page-badge">📖 Data Story</div>
+        <h1>Electric Vehicles Analytics <span class="accent">Story</span></h1>
+        <p>A narrative journey through India's EV landscape — powered by Tableau storytelling.</p>
+    </div>
+</section>
+
+<section class="embed-section">
+    <div class="container">
+
+        <!-- ═══════════════════════════════════════════════════════
+             TABLEAU STORY EMBED — REPLACE THE PLACEHOLDER BELOW
+             Same steps as Dashboard:
+             1. Open your Tableau Public Story
+             2. Click Share → Embed Code
+             3. Replace the placeholder div below with the copied code
+             ═══════════════════════════════════════════════════════ -->
+
+        <div class="tableau-wrapper">
+            <div class="tableau-header">
+                <h2>Story of Electric Cars in India</h2>
+                <p>An interactive story exploring EV adoption, geography, and market data across India</p>
+            </div>
+
+            <div class='tableauPlaceholder' id='viz1772974868377' style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='Story of Electric cars in India ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project_DA_17729746036800&#47;StoryofElectriccarsinIndia&#47;1_rss.png' style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='Project_DA_17729746036800&#47;StoryofElectriccarsinIndia' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project_DA_17729746036800&#47;StoryofElectriccarsinIndia&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-GB' />
+                    <param name='filter' value='publish=yes' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1772974868377');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width = '1016px';
+                vizElement.style.height = '991px';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

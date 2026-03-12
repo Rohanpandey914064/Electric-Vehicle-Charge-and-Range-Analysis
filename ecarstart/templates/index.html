@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% block title %} | Home{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-bg-circles">
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+        <div class="circle c3"></div>
+    </div>
+    <div class="hero-content">
+        <div class="hero-badge">⚡ EV Analytics Platform</div>
+        <h1 class="hero-title">
+            We offer modern<br>
+            <span class="accent">Analytics solutions</span><br>
+            for Electric Vehicles
+        </h1>
+        <p class="hero-subtitle">
+            Explore in-depth data visualizations on global EV brands, efficiency rankings,
+            India's EV market, and top speed comparisons — all in one place.
+        </p>
+        <div class="hero-cta">
+            <a href="{{ url_for('dashboard') }}" class="btn-primary">Explore Dashboard</a>
+            <a href="{{ url_for('story') }}" class="btn-secondary">View Story</a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-num">98</span>
+                <span class="stat-label">Global EV Brands</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num">9</span>
+                <span class="stat-label">EV Brands in India</span>
+            </div>
+            <div class="stat">
+                <span class="stat-num">10+</span>
+                <span class="stat-label">Visualizations</span>
+            </div>
+        </div>
+    </div>
+    <div class="hero-visual">
+        <div class="car-glow"></div>
+        <div class="hero-car">🚗</div>
+        <div class="charge-badge left">🔋 Charging...</div>
+        <div class="charge-badge right">⚡ 98% Efficient</div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+    <div class="container">
+        <h2 class="section-title">What you can explore</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <h3>Global EV Brands</h3>
+                <p>Discover 98 EV brands worldwide, categorized by body style and powertrain type.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🇮🇳</div>
+                <h3>India's EV Market</h3>
+                <p>Deep dive into 9 EV brands available in India — from Tata Nexon to Audi E-Tron.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Efficiency Rankings</h3>
+                <p>Compare top 10 most efficient EV brands by maximum efficiency (Wh/km).</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏎️</div>
+                <h3>Top Speed Analysis</h3>
+                <p>Visualize max top speed across all global EV brands in one chart.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PREVIEW SECTION -->
+<section class="preview-section">
+    <div class="container">
+        <h2 class="section-title">Dashboard Preview</h2>
+        <p class="section-sub">Get a glimpse of what our Tableau-powered analytics look like</p>
+        <div class="preview-cards">
+            <a href="{{ url_for('dashboard') }}" class="preview-card">
+                <div class="preview-thumb dashboard-thumb">
+                    <div class="thumb-label">📊 Analytics Dashboard</div>
+                    <p>EV brand comparisons, bubble charts, treemaps & bar charts</p>
+                </div>
+                <span>Open Dashboard →</span>
+            </a>
+            <a href="{{ url_for('story') }}" class="preview-card">
+                <div class="preview-thumb story-thumb">
+                    <div class="thumb-label">📖 Data Story</div>
+                    <p>India's EV story told through interactive geographic visualizations</p>
+                </div>
+                <span>Open Story →</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

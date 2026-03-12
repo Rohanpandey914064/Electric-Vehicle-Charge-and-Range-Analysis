@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block title %} | Dashboard{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+    <div class="container">
+        <div class="page-badge">📊 Interactive Dashboard</div>
+        <h1>E-Car Start Analytics <span class="accent">Dashboard</span></h1>
+        <p>Explore global and Indian EV market data through interactive Tableau visualizations.</p>
+    </div>
+</section>
+
+<section class="embed-section">
+    <div class="container">
+
+        <!-- ═══════════════════════════════════════════════════════
+             TABLEAU DASHBOARD EMBED — REPLACE THE src BELOW
+             Steps:
+             1. Open your Tableau Public viz
+             2. Click Share → Embed Code
+             3. Copy the <script> tag URL (something like:
+                https://public.tableau.com/views/YourDashboard/Sheet1)
+             4. Paste it in the tableauURL variable below
+             ═══════════════════════════════════════════════════════ -->
+
+        <div class="tableau-wrapper">
+            <div class="tableau-header">
+                <h2>Electric Cars Analytics Dashboard</h2>
+                <p>Brands by body style · Top 10 efficiency · India EV market · Powertrain types · Top speeds</p>
+            </div>
+
+            <div class='tableauPlaceholder' id='viz1772974744499' style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='Dashboard 1 (2) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project_DA_17729746036800&#47;Dashboard12&#47;1_rss.png' style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='Project_DA_17729746036800&#47;Dashboard12' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project_DA_17729746036800&#47;Dashboard12&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-GB' />
+                    <param name='filter' value='publish=yes' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1772974744499');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                if (divElement.offsetWidth > 800) {
+                    vizElement.style.width = '1320px';
+                    vizElement.style.height = '2027px';
+                } else if (divElement.offsetWidth > 500) {
+                    vizElement.style.width = '1320px';
+                    vizElement.style.height = '2027px';
+                } else {
+                    vizElement.style.width = '100%';
+                    vizElement.style.height = '2027px';
+                }
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}
