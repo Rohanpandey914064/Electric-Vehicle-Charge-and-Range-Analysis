@@ -4,7 +4,6 @@
 Access the live application here:  
 https://electric-vehicle-charge-and-range-cnc5.onrender.com/
 
----
 
 ## Introduction
 
