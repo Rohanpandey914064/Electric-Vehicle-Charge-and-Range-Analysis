@@ -13,7 +13,7 @@ This project focuses on building a **data visualization platform using Tableau**
 
 The dashboard is further **integrated into a web application using Flask**, allowing users to interact with the visualizations through a browser.
 
----
+-
 
 # Project Development Procedure
 
